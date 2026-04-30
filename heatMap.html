@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Map Analysis</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Heat Map Analysis
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQSSGV3mLIaGSL1T-hg4x0U0ASt2FcfPQ6XlJAKuqgo7BE0?width=1024" alt="Building density map">
+        </main>
+        <!-- Map link -->
+        <main class="outline-box map-container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1FQJoprlAtTsLX-DZd_S2IEpLwCY8VsE&ehbc=2E312F" width="640" height="480"></iframe>
+        </main>
+        
+        <!-- diagram -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQ60rbkMQ0iTaMdsP2YDCKuAWah8CuD0S9S1K8yvOJChuc?width=820&height=465" alt="Building density map">
+        </main>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="5">Density Classification</th>
+                </tr>
+                <tr>
+                    <th>1<br>0 - 7,78 </th>
+                    <th>2<br>7,78 - 15,55</th>
+                    <th>3<br>15,55 - 23,33</th>
+                    <th>4<br>23,33 - 31,1</th>
+                    <th>5<br>31,1 - 38,88</th>
+                </tr>
+                <tr>
+                    <th class="area-header">Area (SqKm)</th>
+                    <th rowspan="1"></th>
+                    <th colspan="5"></th>
+                </tr>
+            </thead>
+            <!-- Bagian Body Tabel yang Diperbarui -->
+                <tbody>
+                    <tr> <!-- Class highlight sudah dihapus -->
+                    <td class="row-label">West Jakarta</td>
+                    <td>63,76</td>
+                    <td>54,93</td>
+                    <td>6,38</td>
+                    <td>0,00</td>
+                    <td>0,00</td>
+                </tr>
+                <tr>
+                    <td class="row-label">Central Jakarta</td>
+                    <td>26,67</td>
+                    <td>13,76</td>
+                    <td>3,99</td>
+                    <td>2,68</td>
+                    <td>0,85</td>
+                    </tr>
+                <tr>
+                    <td class="row-label">South Jakarta</td>
+                    <td>66,23</td>
+                    <td>52,82</td>
+                    <td>20,27</td>
+                    <td>4,95</td>
+                    <td>0,00</td>
+                </tr>
+                <tr>
+                    <td class="row-label">East Jakarta</td>
+                    <td>103,11</td>
+                    <td>64,06</td>
+                    <td>13,37</td>
+                    <td>3,20</td>
+                    <td>0,17</td>
+                </tr>
+                <tr>
+                    <td class="row-label">North Jakarta</td>
+                    <td>33,83</td>
+                    <td>59,37</td>
+                    <td>36,55</td>
+                    <td>9,01</td>
+                    <td>1,98</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Tools : ArcMap</a><br>
+                <a>Method : Kernel Density, Equal Interval Classification</a><br>
+                <a>Heat map analysis is used to identify where features with either high or low values cluster spatially. The analysis works by looking at each features within the contact of neighboring features.
+                    Kernel Density method used to measure density of point pattern based on sample observations (buildings point) in this map. 
+                    The result shows a visual representation of where the points are located and how they distributed in space. The data were classified using equal interval method.
+                    The analysis diagram shows that East Jakarta has the highest density class 1 and 2 areas, with density class classifications of (0 - 7.78) and (7.78 - 15.55) compared to other areas of Jakarta. 
+                    Central Jakarta and North Jakarta are the two areas with the hottest points, class 5 with an area of ​​0.85 and 1.98 square kilometers, respectively. If observed, the centers of these two hot areas are located in the business and economic centers of Sudirman and Menteng (Central Jakarta) and Ancol (North Jakarta).
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Data</div>
+            <div class="data-box">
+                <ol>
+                    <li>Shapefile Building points of Jakarta 2019, Indonesia Geospatial </li>
+                    <li>Indonesia Topographic Maps 2019, Indonesia Geospatial</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Deficiencies and possible improvements</div>
+            <div class="desc-box">
+                <ol>
+                    <li>The drawback of the data used is that it is only based on the location of building points without additional attributes such as population, so the analysis is only based on the number of points without measuring population density in the area.</li>
+                    <li>The classification method greatly influences the visualization of the smoothness of the distribution of hot and cold spots.</li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

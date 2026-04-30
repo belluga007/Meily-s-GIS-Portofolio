@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVI</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            SOIL ADJUSTED VEGETATION INDEX (SAVI)
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="GALLERIES/urbanDensity.png" alt="Fastest Route Map">
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>The Soil-Adjusted Vegetation Index (SAVI) is a remote sensing tool used to estimate vegetation "greenness" while minimizing the misleading effects of soil brightness. 
+                    It is an enchancement of the widely used NDVI and is particularly valuavle in <b>arid or semi-arid regions</b> where sparse plant cover leaves much of the soil exposed<br></a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <a>Tools : Google Earth Engine, ArcMap, Excel</a>
+                <a>Method : SAVI = (NIR-red)/(NIR+red+L)x(1+L)</a>
+                <ol>
+                    <li>This is script is the adaptation from https://github.com/ramiqcom/ebook-urban-gee.git By Ramadhan, Cited on August, 2024</li>
+                    <li>Sentinel-3 or Landsat, Primary data extracted from Landsat 9 Imagery, USGS, processed using Google Earth Engine</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Functions</div>
+            <div class="desc-box">
+                <ol>
+                    <li>Early-stage crop monitoring: assessing planting success before full canopies develop</li>
+                    <li>Dryland ecosystem tracking: monitoring rangelands or deserts where soil exposure is high</li>
+                    <li>Environmental restoration: tracking regrowth in post-fire areas ir reforestation zones</li>
+                </ol>
+            </div>
+        </section>
+</body>
+</html>

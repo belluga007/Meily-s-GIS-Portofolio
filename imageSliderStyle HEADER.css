@@ -1,0 +1,49 @@
+/* Container area kotak merah */
+.hero-section {
+    position: relative;
+    height: 250px; /* Atur tinggi header Anda */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.heroslideshow-container {
+    height: 400px; /* Sesuaikan tinggi */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Gambar Background */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar memenuhi area tanpa gepeng */
+    display: none; /* Sembunyikan secara default, diatur oleh JS */
+}
+
+/* Kotak Transparan untuk Judul */
+.header-content {
+    position: relative;
+    z-index: 10; /* Pastikan teks berada di depan gambar */
+    margin-left: 50px;
+}
+
+.title-overlay {
+    background-color: rgba(0, 0, 0, 0.65); /* Hitam transparan agar judul terbaca */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}

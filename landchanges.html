@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Cover Changes</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Land Cover Changes Analysis 
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQT2HCx9b2xMRbBe7ClQLaViAb24GGpqhY_upTEz2E_Pcqc?width=1024" alt="Closest Facility Map">
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Tools : Google Earth Engine, ArcMap</a><br>
+                <a> Identification of land cover changes based on NDVI classification. NDVI is an index used in remote sensing to measure the greeness, density, and health of vegetation based on the spectral reflectance of red (Red) and near-infrared (NIR) light.<br>
+                    Tesso Nilo National Park in Jambi is one of the world's richest lowland tropical rainforests. It is home to more than 4,000 plant species and 3% of the world's mammals, including the Sumatran tiger and the Sumatran elephant.
+                    According to Global Forest Watch satellite imagery , Tesso Nilo National Park's primary forest cover is declining rapidly. Between 2002 and 2022, Tesso Nilo's primary forest area decreased by 58,300 hectares. This means that in the past two decades, Tesso Nilo has lost 87% of its primary forest cover.<br>
+                    This land cover change analysis utilizes Landsat 8 NDVI Annual Composite satellite imagery identification from 2016 to 2025. 
+                    (These Landsat Collection 2 Tier 1 Level 2 composites are made from Tier 1 Level 2 orthorectified scenes.These composites are created from all the scenes in each annual period beginning from the first day of the year and continuing to the last day of the year. 
+                    All the images from each year are included in the composite, with the most recent pixel as the composite value. Landsat-7 image courtesy of the U.S. Geological Survey)<br>
+                    NDVI classification is divided into 4 classes :
+                    <ul>
+                        <li>-0,7 - 0,1  = water</li>
+                        <li>0,45 - 0,55 = Sparse Vegetation</li>
+                        <li>0,55 - 0,77 = Scattered Vegetation</li>
+                        <li>0,77 - 1    = Forest</li>
+                    </ul>
+
+                </a>
+            </div>
+        </section>
+        <!-- diagram -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTqajRG-ETlRLW0XoiUHhWYAePsHMnzt7WtP0j6VhaFeHE?width=549&height=472" alt="land changes comparison">
+        </main>
+    
+        <table>
+            <!-- Judul Utama -->
+            <tr>
+                <th colspan="3" class="header-main">Overall Land Cover Changes</th>
+            </tr>
+    
+            <!-- Header Tahun -->
+            <tr>
+                <th class="col-label"></th>
+                <th class="col-data text-right" style="vertical-align: bottom; height: 50px;">2016</th>
+                <th class="col-data text-right" style="vertical-align: bottom;">2025</th>
+            </tr>
+    
+            <!-- Baris Data -->
+            <tr>
+                <td class="text-left">Water</td>
+                <td class="text-right">48517,86</td>
+                <td class="text-right">52000,46</td>
+            </tr>
+            <tr>
+                <td class="text-left">Sparse Vegetation</td>
+                <td class="text-right">134154,7</td>
+                <td class="text-right">166570,38</td>
+            </tr>
+            <tr>
+                <td class="text-left">Scattered Vegetation</td>
+                <td class="text-right">553411,64</td>
+                <td class="text-right">612991,47</td>
+            </tr>
+            <tr>
+                <td class="text-left">Forest</td>
+                <td class="text-right">2976180,59</td>
+                <td class="text-right">2877010,89</td>
+            </tr>
+    
+            <!-- Baris Total -->
+            <tr class="bold" style="color: red;">
+                <td class="text-left">total area</td>
+                <td class="text-right">3712264,79</td>
+                <td class="text-right">3708573,2</td>
+            </tr>
+        </table>
+
+        <table>
+            <!-- Judul Utama -->
+            <tr>
+                <th colspan="6" class="header-title">Land Changes Tesso Nilo National Park (in Hectare)</th>
+            </tr>
+        
+            <!-- Bagian Pelalawan -->
+            <tr>
+                <th rowspan="5">Pelalawan</th>
+                <th></th>
+                <th>Forest</th>
+                <th>Scattered Vegetation</th>
+                <th>Sparse Vegetation</th>
+                <th>Water</th>
+            </tr>
+            <tr>
+                <td class="left-align">Forest</td>
+                <td>832199,9</td>
+                <td>145914,62</td>
+                <td>43927,54</td>
+                <td>513,38</td>
+            </tr>
+            <tr>
+                <td class="left-align">Scattered Vegetation</td>
+                <td>123950,5</td>
+                <td>79334</td>
+                <td>12193,61</td>
+                <td>387,42</td>
+            </tr>
+            <tr>
+                <td class="left-align">Sparse Vegetation</td>
+                <td>26329,99</td>
+                <td>17002,19</td>
+                <td>12942,69</td>
+                <td>877,83</td>
+            </tr>
+            <tr>
+                <td class="left-align">Water</td>
+                <td>177,45</td>
+                <td>273,14</td>
+                <td>748,4</td>
+                <td>30255,09</td>
+            </tr>
+
+            <!-- Pembatas Kosong (Opsional) -->
+            <tr><td colspan="6" style="border: none; height: 10px;"></td></tr>
+
+            <!-- Bagian Kampar -->
+            <tr>
+                <th rowspan="5">Kampar</th>
+                <th></th>
+                <th>Forest</th>
+                <th>Scattered Vegetation</th>
+                <th>Sparse Vegetation</th>
+                <th>Water</th>
+            </tr>
+            <tr>
+                <td class="left-align">Forest</td>
+                <td>730943,3</td>
+                <td>95763,58</td>
+                <td>18794,12</td>
+                <td>260,46</td>
+            </tr>
+            <tr>
+                <td class="left-align">Scattered Vegetation</td>
+                <td>85513,83</td>
+                <td>50916,17</td>
+                <td>9818,81</td>
+                <td>298,83</td>
+            </tr>
+            <tr>
+                <td class="left-align">Sparse Vegetation</td>
+                <td>9720,33</td>
+                <td>8337,49</td>
+                <td>11418,56</td>
+                <td>3405,07</td>
+            </tr>
+            <tr>
+                <td class="left-align">Water</td>
+                <td>24,09</td>
+                <td>127,04</td>
+                <td>1264,52</td>
+                <td>7109,61</td>
+            </tr>
+
+            <!-- Pembatas Kosong (Opsional) -->
+            <tr><td colspan="6" style="border: none; height: 10px;"></td></tr>
+
+            <!-- Bagian Indagiri -->
+            <tr>
+                <th rowspan="5">Indagiri</th>
+                <th></th>
+                <th>Forest</th>
+                <th>Scattered Vegetation</th>
+                <th>Sparse Vegetation</th>
+                <th>Water</th>
+            </tr>
+            <tr>
+                <td class="left-align">Forest</td>
+                <td>583380,3</td>
+                <td>73901,6</td>
+                <td>9704,2</td>
+                <td>310,3</td>
+            </tr>
+            <tr>
+                <td class="left-align">Scattered Vegetation</td>
+                <td>69450,2</td>
+                <td>35039,9</td>
+                <td>5914,6</td>
+                <td>180,4</td>
+            </tr>
+            <tr>
+                <td class="left-align">Sparse Vegetation</td>
+                <td>8837,8</td>
+                <td>4673,3</td>
+                <td>5038,2</td>
+                <td>576,3</td>
+            </tr>
+            <tr>
+                <td class="left-align">Water</td>
+                <td>15,03</td>
+                <td>110,6</td>
+                <td>385,7</td>
+                <td>3184,3</td>
+            </tr>
+            <!-- Pembatas Kosong (Opsional) -->
+            <tr><td colspan="6" style="border: none; height: 10px;"></td></tr>
+
+            <!-- Bagian Kuantan -->
+            <tr>
+                <th rowspan="5">Kuantan</th>
+                <th></th>
+                <th>Forest</th>
+                <th>Scattered Vegetation</th>
+                <th>Sparse Vegetation</th>
+                <th>Water</th>
+            </tr>
+            <tr>
+                <td class="left-align">Forest</td>
+                <td>347176,97</td>
+                <td>70821,99</td>
+                <td>19966,28</td>
+                <td>318,53</td>
+            </tr>
+        <tr>
+            <td class="left-align">Scattered Vegetation</td>
+            <td>49463,34</td>
+            <td>23583,94</td>
+            <td>6005,06</td>
+            <td>265,42</td>
+        </tr>
+        <tr>
+            <td class="left-align">Sparse Vegetation</td>
+            <td>9179,24</td>
+            <td>6648,79</td>
+            <td>7244,51</td>
+            <td>1019,43</td>
+        </tr>
+        <tr>
+            <td class="left-align">Water</td>
+            <td>44,51</td>
+            <td>349,79</td>
+            <td>1048,31</td>
+            <td>2959,19</td>
+        </tr>
+        </table>
+
+        <!-- Description Section 2-->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Tesso Nilo National Park encompasses four regencies: Palalawan, Kampar, Indagiri, and Kuantan.
+                    The largest land cover change occurred in forest areas in Pelalawan Regency, covering 1,903,55.54 hectares. Overall, Pelalawan is the regency with the highest rate of land cover change. The identified forest area converted to scattered vegetation was 145,914.62 hectares.
+                    Kampar Regency showed a change in forest land cover, converting to scattered vegetation, covering 95,763.58 hectares. Kampar Province showed the second-highest forest land cover change after Pelalawan Regency. 
+                    Overall, comparing the 2016 and 2025 data, there was a reduction in forest land cover of 99,169.7 hectares, and an increase in other land cover areas, such as sparse vegetation, which expanded by 32,415.68 hectares, scattered vegetation, which increased by 59,579.83 hectares, and identified water bodies, which expanded by 3,482.6 hectares.
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <a>Method : NDVI, and Overlay</a><br>
+                <a>Tools : Google Earth Engine and ArcMap</a><br>
+                <ol>
+                    <li>NDVI Tesso Nilo National Park area 2016 and 2025 (Landsat-8 Collection Annual NDVI Composite of the U.S Geological Survey) </li>
+                    <li>Indonesia topographic map, Administration line 2024, Badan Informasi Geospasial </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Deficiencies and possible improvements</div>
+            <div class="desc-box">
+                <ol>
+                    <li>The results of land cover identification using NDVI provide information related to vegetation density based on reflectance values ​​against the infrared spectrum and are a practical way to see actual land cover on the earth's surface if land cover data is not available.</li>
+                    <li>Based on research conducted by Aryastana, P., et al. (2022), the classification accuracy was 86.54%. However, this accuracy level can be influenced by several factors, such as the shady agricultural land and residential areas, which show good contrast when compared to water areas.</li>
+                    <li>Further analysis for conservation research can be done by looking at critical areas for immediate reforestation, and adding data on areas that have been reforested to see the latest percentage of change as a reference for subsequent actions.</li>
+                    <li>This identification of land cover changes can only be an initial reference, actual validated data is still needed to improve the accuracy of analysis, especially in research and making nature conservation policies.</li>
+                    <li>Access to temporal and actual land cover data with high resolution cannot be obtained openly, so the level of accuracy in this classification is not yet strong enough (because it is only based on pixel values ​​from the results of light reflection in the near infrared and infrared bands) if used as research material that requires precise data accuracy.</li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

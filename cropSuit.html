@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropSuit</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+     <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Crops Land Suitability Analysis
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQR3JqPantI8QLZx-TEU3JtDAaz2Ax6QPIxbu7t9OUj_4AA?width=1024" alt="Crop Suitability">
+        </main>
+
+        <!-- Description Section 2-->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Tesso Nilo National Park encompasses four regencies: Palalawan, Kampar, Indagiri, and Kuantan.
+                    The largest land cover change occurred in forest areas in Pelalawan Regency, covering 1,903,55.54 hectares. Overall, Pelalawan is the regency with the highest rate of land cover change. The identified forest area converted to scattered vegetation was 145,914.62 hectares.
+                    Kampar Regency showed a change in forest land cover, converting to scattered vegetation, covering 95,763.58 hectares. Kampar Province showed the second-highest forest land cover change after Pelalawan Regency. 
+                    Overall, comparing the 2016 and 2025 data, there was a reduction in forest land cover of 99,169.7 hectares, and an increase in other land cover areas, such as sparse vegetation, which expanded by 32,415.68 hectares, scattered vegetation, which increased by 59,579.83 hectares, and identified water bodies, which expanded by 3,482.6 hectares.
+                </a>
+            </div>
+        </section>
+
+                <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <a>Method : SAVI, NDWI, Multiple ring buffer, Slope</a><br>
+                <a>Tools : Google Earth Engine, ArcMap</a><br>
+                <ol>
+                    <li>Slope = Indonesia's National Elevation Model, Indonesia Geospatial </li>
+                    <li>SAVI (Land Soil Adjusted Vegetation Index) = U.S. Geological Survey (USGS). 2025. Landsat 9 Collection 2 Level 2. Google Earth Engine.</li>
+                    <li>NDWI (Normalized Difference Water Index) = U.S. Geological Survey (USGS). 2025. Landsat 8 Collection 2 Level 2. Google Earth Engine.</li>
+                    <li>River Shapefile = Banyuwangi, Indonesia Topographic Map, Indonesia Geospatial</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Deficiencies and possible improvements</div>
+            <div class="desc-box">
+                <a>This suitability analysis was conducted for practice purposes because it only used four parameters, considering ease of data availability. However, performing suitability analysis for various other applications requires more parameters, at least eight.</a>
+            </div>
+        </section>
+</body>
+</html>

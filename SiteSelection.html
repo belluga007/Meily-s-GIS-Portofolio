@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Selection Analysis</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Site Selection Analysis
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRORoawuhH8Rq8OXmCGu-x8AXoHV84pIcep3gdXj7dEIjc?width=3508&height=2480" alt="Site Selection Map">
+        </main>
+        <!-- Map link -->
+        <!--<main class="outline-box map-container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1FJgdtkd6TKsOwKLH9K6WVyWHnGA7rxg&ehbc=2E312F" width="640" height="480"></iframe>
+        </main>-->
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>a decision-making process using geographical information systems to evaluate, rank, and select the optimal location for a facility, project, or development. It integrates spatial datasets (land use, demographics, transportation, topography) to perform suitability modeling, filtering out, and ranking potential locations based on defined criteria.<br>
+                    This map shows the site selection analysis for a new hospital in Jakarta. The analysis considers various factors such as population density, proximity to existing healthcare facilities, accessibility via transportation networks, and land use patterns. <br>
+                    
+                    <br>The resulting map highlights the most suitable locations for the new hospital based on these criteria.<br>
+                    The analysis is performed using ArcGIS Pro, which allows for the integration of multiple spatial datasets and the application of weighted overlay techniques to identify optimal sites for development. <br>
+                    The map also includes a heatmap layer that visualizes areas of high population density, which is a critical factor in determining the demand for healthcare services in different parts of the city. <br>
+                    Overall, this site selection analysis provides valuable insights for urban planners and decision-makers in identifying the best location for a new hospital to serve the needs of the community effectively. 
+                    <br><br> ps : I have excluded the water body in the classified process because the water body is not suitable for building a hospital, so I focused on the land area for the analysis.
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <a>Method : Overlay and weightned analysis (Multi-Criteria Decision Analysis) to rank potential sites</a><br>
+                <a>Tools : ArcGIS Pro</a><br>
+                <ol>
+                    <li>Jakarta Population density data (Jakarta Central Bureau of Statistics)</li>
+                    <li>Proximity to major roads (Indonesia Geospatial Data, Jakarta Province)</li>
+                    <li>Slope data (Indonesia National DEM (DEMNAS), Indonesia Geospatial Data)</li>
+                    <li>Land cover data (ESRI, Sentinel-2 Land Cover Explorer)</li>
+                    <li>Proximity to other hospitals</li>
+                </ol>
+                <a>Credit Tutorial : https://youtu.be/PXok9CQz-BM?si=HQrL9oS84qm7wCSF </a>
+                <br><br>
+                <div class="outline-box map-container">
+                    <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTtKsIAa7MmS5Ae1caSYMi8AXDcoZsMkTvIhTzTgg4qlgw?width=1024" alt="Site Selection flowchart">
+                </div>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <!--<section>
+            <div class="label">Deficiencies and possible improvements</div>
+            <div class="desc-box">
+                <ol>
+                    <li>One drawback of this map is that it ignores the road types. The analysis is based solely on the shortest road length, but in reality, some types of roads may be impassable by vehicles.</li>
+                    <li>road inspections and restrictions will be required if they are to be used as detailed information or as a reference for decision-making.</li>
+                    <li>Restrictions on attributes such as specific road types can be included in the "Restrictions" section.</li>
+                    <li>While creating this map, I encountered several issues with the road data. The road data I had was incomplete in several areas, so I had to remove two hospital points to avoid this error. Therefore, this analysis relies heavily on the level of detail and accuracy of the road data used.</li>
+                </ol>
+            </div>
+        </section>-->
+
+    </div>
+</body>
+</html>

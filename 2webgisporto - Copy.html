@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meily GIS PORTOFOLIO</title>
+    <!-- <link rel="stylesheet" href="webgisporto.css"> -->
+    <link rel="stylesheet" href="2webgisporto - Copy.css">
+    <link rel="stylesheet" href="imageSliderStyle HEADER.css">
+    <link rel="stylesheet" href="openModal.css">
+    <!-- Ganti link sebelumnya dengan yang lengkap ini -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- The Modal Overlay -->
+    <header>
+        <h1>MEILY'S GIS PORTOFOLIO</h1>
+    </header>
+    <br>
+    <header class="hero-section">
+        <div class="heroslideshow-container">
+            <!-- Perhatikan perbaikan pada baris src pertama di bawah ini -->
+            <img class="slide active" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQ4AkvMwPm8QaQleJw3RJJFAUg0o_pVbJhDBd_eJVzc7tg?width=972&height=450" alt="Background 1">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQS79-0uEkWFQYwJxEbhKg9jAQanRJ0i1oXav1ukzJien4g?width=972&height=450" alt="Background 2">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRpjpbFELqPRLceA7kXCJYtAUhYhXewQFMzm6SffABnysE?width=972&height=450" alt="Background 3">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQB4RDM93eSRI3PnjKWTRC0ASd4MKQRbM83XWNuZUChLTs?width=972&height=450" alt="Background 4">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQLAfeP5cedTooSW1nCPKlmAfLsgHF-XNxZvH7Gq5hbbg8?width=972&height=450" alt="Background 5">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQSTE7sntFvIS5e_8J-6I0W0AefeeSDox039Jls3V_n9GRU?width=972&height=450" alt="Background 6">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQSGfaaW9mPWQofAT1qdDihaAdVXB96TquYw_Rhsab3r5rA?width=972&height=450" alt="Background 7">
+            <img class="slide" src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTPcBUoN6VISqmky-j9EFGOAaodi3-Cz9W5CIRsHXJQRZ4?width=972&height=450" alt="Background 8">
+        </div>
+        <!--<div class="header-content">
+            <h1 class="title-overlay">MEILY'S GIS PORTOFOLIO</h1>
+        </div>-->
+    </header>
+
+    <br>
+    <div class="container">
+        <main class="projects">
+        <h2>Digitizing and Georeferencing</h2>
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQlaIdBhU7_SJkEL5KIJNQ1AbQ7qXHf77Uctyx24M_zsrk?width=1920&height=1049" alt="georeference" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="digitizingGeoreference.html">Georeference and Digitize Batavia 1945</a></h2>
+                    <div class="desc-box">Fundamental method to digitalize old printed map into digital data and digital map</div>
+                </div>
+            </div>
+            
+        <h2>Network Analysis</h2>
+            <!-- Project 1 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQKB025qgf-S5GYfJ4T4b11AddDhOJRtO-UKJomptYgXpk?width=256" alt="fastroute" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="fastestroute.html">The Best Route Analysis</a></h2>
+                    <div class="desc-box">Method used to determine the quickest route between a starting and ending point by considering factors like speed limits, road types, etc.</div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRxsGxMGCgqS5yPXUujYPEiAUnFR1H-7uwGDubJvCM3J-U?width=256" alt="closestFacy" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="closetestfaci.html">Closest Facility Analysis</a></h2>
+                    <div class="desc-box">Finding the closest facility to an accident happen</div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQR90SlZAkd-SrmyKOc8t5v3AaWcxKRf31QtHShC8msVIkw?width=256" alt="serviceArea" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="servicearea.html">Service Area Analysis</a></h2>
+                    <div class="desc-box"> A network service area is a region that encompasses all accessible streets, that is, streets that lie within a specified impedance. </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTkWc9Z3QBnSqZnz9ECeVoXAeWtBJ0rFNi3949x7pD1Wjc?width=256" alt="tsunami" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="TsunamiRoute.html">Closest Facility Analysis: Tsunami Evacuation Map Plan</a></h2>
+                    <div class="desc-box"> Implementation of Network Analysis to encompasses all accessible streets, that lie within a specified impedance. </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQShAbGrK6D4TJRjeTIQZcIxAd-JGaS46pGrSqKHkZNZrGI?height=256" alt="urbanAccess" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="UrbanAccessPY.html">Analyzing Urban Access with Python & OSM</a></h2>
+                    <div class="desc-box">What Accessibility looks like in real cities - not through policies or plans, but through actual, mappable data.</div>
+                </div>
+            </div>
+
+        <h2>Overlay Analysis</h2>
+            <!-- Project 6 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQT2HCx9b2xMRbBe7ClQLaViAb24GGpqhY_upTEz2E_Pcqc?width=256" alt="landChanges" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info"> 
+                    <h2><a href="landchanges.html">GIS for Agriculture : Land Cover Changes Analysis</a></h2>
+                    <div class="desc-box"> Using NDVI to identify vegetation coverage changes from 2016 to 2025 in Tesso Nilo National Park</div>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQR3JqPantI8QLZx-TEU3JtDAaz2Ax6QPIxbu7t9OUj_4AA?width=256" alt="cropSuit" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="cropSuit.html">GIS for Agriculture : Crop Land Suitability Analysis</a></h2>
+                    <div class="desc-box"> Analysis to determine suitable land for crops based on spatial analysis using Analystical Heirarchy Process (AHP) method</div>
+                </div>
+            </div>
+            <!-- Project 8 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQSSGV3mLIaGSL1T-hg4x0U0ASt2FcfPQ6XlJAKuqgo7BE0?width=256" alt="buildDen" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="heatMap.html">Heat Map Analysis</a></h2>
+                    <div class="desc-box"> Heat map analysis to see the patterns or trends in the area using Kernel Density method</div>
+                </div>
+            </div>
+            <!-- Project 9 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRORoawuhH8Rq8OXmCGu-x8AXoHV84pIcep3gdXj7dEIjc?width=256" alt="SiteSelec" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="SiteSelection.html">Site Selection Analysis</a></h2>
+                    <div class="desc-box"> Heat map analysis to see the patterns or trends in the area using Kernel Density method</div>
+                </div>
+            </div>
+            
+            
+        <h2>Remote Sensing</h2>
+            <!-- Project 10 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTj9pOjvqlYTbugyvZdpYPXAZ8mGOeRw-p_ZCeFLriq2rI?width=256" alt="urbanDensity" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info">
+                    <h2><a href="urbanDensity.html">Urban Density</a></h2>
+                    <div class="desc-box">Using Bands from Landsat 9 Surface reflectance imagery to generate Building Index
+                    </div>
+                </div>
+            </div>
+            <!-- Project 11 -->
+            <div class="project-item">
+                <div> <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTqVJNDlwXFTKEWYlcviX6bActZO1CdaOBrV8E359uHHV4?width=256" alt="NDMI" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info"> 
+                    <h2><a href="NDMI.html">Normalize Difference Moisture Index (NDMI)</a></h2>
+                    <div class="desc-box">Remote sensing analysis to monitor vegetation water content using setelite imagery data
+                    </div>
+                </div>
+            </div>
+            <!-- Project 12 -->
+            <div class="project-item">
+                <div> <img src="link" alt="kernel" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info"> 
+                    <h2><a href="heatMap.html">Urban Heat Index</a></h2>
+                    <div class="desc-box">Heat map analysis to see the patterns or trends in the area using Kernel Density method
+                    </div>
+                </div>
+            </div>
+            <!-- Project 13 -->
+            <div class="project-item">
+                <div> <img src= "link" alt="kernel" class="map-box" id="myMap" onclick="openModal(this)" style="cursor: pointer;"></div>
+                <div class="project-info"> 
+                    <h2><a href="heatMap.html">Land Surface Temperature</a></h2>
+                    <div class="desc-box">Heat map analysis to see the patterns or trends in the area using Kernel Density method
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <aside class="sidebar">
+            <div class="profile-header">
+                <div class="profile-pic"><img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRhN2QFs8kjQ5SjlkpoeGRLAQ04LFkBVDisZfEdi1NePSU?height=256" alt="Profile"></div>
+                <div> 
+                    <div style="font-weight: bold; font-size: 1.1em;">Meily Sari</div>
+                    <div style="font-size: 0.8em; color: #888;">GIS Specialist</div>
+                </div>
+            </div>
+            <!--<ul>
+                <li><strong><a href="www.linkedin.com/in/meily-sari">LinkedIn Profile</a></strong></li>
+                <li><strong>Education</strong><br>B.Ed. in Geography</li>
+                <li><strong>Email:</strong>meilysari002@gmail.com</li>
+                <li><strong>Location:</strong>Jakarta, Indonesia</li>
+            </ul>!-->
+            <ul class="sidebar-list">
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                    <strong a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></strong>
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <span><strong>Education</strong>
+                        <br>YOGYAKARTA STATE UNIVERSITY
+                        <br>B.Ed. in Geography
+                        <br>GPA : 3.69/4.00
+                    </span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span><strong>Email:</strong> meilysari002@gmail.com</span>
+                </li>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><strong>Location:</strong> Jakarta, Indonesia</span>
+                </li>
+            </ul>
+            <br>
+                <h4>Technical Skills</h4> <!-- Berikan margin bawah pada heading ini -->
+                <ul>
+                    <li>ArcGIS - Intermediate</li>
+                    <li>QGis - Intermediate</li>
+                    <li>Google Earth Engine - Intermediate</li>
+                    <li>Javascript - Beginner</li>
+                </ul>
+                <br><h4>Soft Skill</h4>
+                <ul>
+                    <li>kind, honest, straight foward</li>
+                    <li>love study, high curiosity and exploring</li>
+                    <li>diligent and independent</li>
+                    <li>leadership and communication, translate complex spatial data into baby language for non-GIS stakeholder</li>
+                    
+                </ul>
+        </aside>
+    </div>
+
+<div class="header-container">
+    <h2>Sertificates</h2>
+</div>
+    <!--Sertificate-->
+    <section id="slider" class="section-slider">
+        <div class="galimage-slider">
+            <!--IMAGE-->
+            <div class="galslide active">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQT_LsoigT4EQ62bjfgwzEBAAYXrz5xgKNxB09SdmRus-aQ?width=660" alt="ErsiMooc_SpatialAnalysis">
+                <!--<div class="slide-text">
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTm-s3VeFI5S6mGnvIYIgl7AVM93GNGrqgcRdgHDvmbUvM?width=660" alt="EsriMooc_ClimateAnalysis">
+                <!--<div class="slide-text"> 
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQT-jVCuTDV6TKeDvEY9KqBqASzoyF-vVFznvRxvaCgF0yw?width=660" alt="EsriTraining_datamanagement">
+                <!--<div class="slide-text"> 
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQSR9OQCjNPJRLIUfc5P9hhDAXbpnxPNW-kQCyXPZjFaOLA?width=660" alt="mapVis">
+                <!--<div class="slide-text"> 
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQAUdU46J8XSZtzpMikkRUhATZMQ2VLCrZfm9V5XtQSY7U?height=660" alt="Assistant">
+                <!--<div class="slide-text">
+                    <h2>Game Development</h2> https://drive.google.com/file/d/15FEurmxHuytfSpMSUL2i6LykE0om3Emw/view?usp=drive_link
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTqvbpnKe0zRa0fogWa86uoAdBat7Rd2qbMV1okyny9Jf0?width=660" alt="javascript">
+                <!--<div class="slide-text"> https://drive.google.com/file/d/1kf_iwb0Y6pA7c2zgFrVtZcNt8tMccoIr/view?usp=drive_link
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRKCamf41DoRbwif5ulS5L-ASphuXrM9sx39FF5eSCqboM?width=660" alt="html">
+                <!--<div class="slide-text"> https://drive.google.com/file/d/1luJZLo_TW6OWfsCqSsQHylqJ4gn1FU7h/view?usp=drive_link
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRKCamf41DoRbwif5ulS5L-ASphuXrM9sx39FF5eSCqboM?width=660" alt="haki">
+                <!--<div class="slide-text"> https://drive.google.com/file/d/1m8ZmN2LHPXizGxRO1GSMb6c_nuN5scQT/view?usp=drive_link
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+
+            <!--BUTTON-->
+            <div class="navigation">
+                <div class="slider-btn active"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+            </div>
+            <!--<button onclick="prev()" class="prev-next-btn" id="btn-prev">f < </button>
+            <button onclick="next()" class="prev-next-btn" id="btn-next"> > </button>!-->
+        </div> 
+    </section>
+    <br>
+    <br>
+</div>
+
+<div class="header-container">
+    <h2>Galleries</h2>
+    <p>Cartography isn't just about making map, it's about spatial communication with arts</p>
+</div>
+    <!--Galleries-->
+    <section id="slider" class="section-slider">
+        <div class="galimage-slider">
+            <!--IMAGE-->
+            <div class="galslide active">
+                <img src= "https://1drv.ms/i/c/ac53d8ec6e57d956/IQRjSWJRzasxQ79SnWm83shPAe1WUWNlO1Ip4r3vhuqq-ho?width=1024" alt="3dmap">
+                <!--<div class="slide-text">
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+            <div class="galslide">
+                <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTVhS3WxLkhSqb71c30GyN3AchrM-NiDjnM33wLS4gbB-0?width=1024" alt="sungai">
+                <!--<div class="slide-text">
+                    <h2>Game Development</h2>
+                    <p>Instead of playing game all day long, why not create your own?</p>
+                </div><!-->
+            </div>
+
+            <!--BUTTON-->
+            <div class="navigation">
+                <div class="slider-btn active"></div>
+                <div class="slider-btn"></div>
+            </div>
+            <!--<button onclick="prev()" class="prev-next-btn" id="btn-prev"> < </button>-->
+        </div>
+    </section>
+
+<footer class="footer-container">
+    <div class="footer-content">
+    <h2>A Love Letter From Author</h2>
+        <p class="recruiter-note">Dear Recruiter and Scholarship Committee,</p>
+        <p class="main-text">
+            I hope you are all well and always surrounded by happiness. <br>
+            With all respect, The skills I have may not be enough, but isn't working also part of learning? just as experience shapes an individual over the years.
+            And that doesn't mean I can't work properly, Everyone comes from the same starting point, and all they need just a small chance. 
+            Give me a chance and I will learn. Give me a chance to grow.
+        </p>
+        <p class="signature">Sincerely, <strong>The Dreamer</strong></p>
+    </div>
+</footer>
+
+</body>
+<script src="2webgisporto - Copy.js"defer></script>
+<script src="imageSliderHeader.js" defer></script>
+<script src="2webgisporto - gallery.js" defer></script>
+
+<!--<script>
+function openModal(element) {
+    document.getElementById("mapModal").style.display = "flex";
+    document.getElementById("imgFull").src = element.src;
+}
+
+function closeModal() {
+    document.getElementById("mapModal").style.display = "none";
+}
+</script>!-->
+</html>

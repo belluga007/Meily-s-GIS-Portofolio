@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georeference and Digitize Old Map</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Georeference and Digitize Old Map 1945
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQQlaIdBhU7_SJkEL5KIJNQ1AbQ7qXHf77Uctyx24M_zsrk?width=1920&height=1049" width="1920" height="1049" alt="georeferenced old map">
+        </main>
+
+        <!-- picture -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTvWFhD8HwKTo67DT2q6reeAX23vzFtwr4yd3JmIlO4wgY?width=938&height=694" width="938" height="694" alt="RMSE georeferenced old map">
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Tools : Digitation, ArcMap</a><br>
+                <a>A map depicting the fastest evacuation routes from tsunami hazard zones to temporary and permanent evacuation points. 
+                    The fastest route is calculated based on road length in meters. Several impediments, such as elevation, road type, and travel time, are ignored due to attribute limitations in the road dataset used.<br>
+                    Some data obtained by digitizing the Tsunami Evacuation Plan Map For Bantul Regency, Yogyakarta, 2010 consists of: estimated tsunami zones, fishing settlements, temporary and permanent evacuation points.
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Data</div>
+            <div class="data-box">
+                <ol>
+                    <li>Indonesia Topographic Map, Bantul Regency, Yogyakarta Special Region, 2019, Indonesia Geospatial</li>
+                    <li>Road Shapefile, 2019</li>
+                    <li>Tsunami Evacuation Plan Map For Bantul Regency, Yogyakarta, 2010</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Deficiencies and possible improvements</div>
+            <div class="desc-box">
+                <ol>
+                    <li>I tried to assign elevation attributes to the road dataset but it failed and I haven't found the reason yet.</li>
+                    <li>Determining the fastest route based on the length of the road in meters. I tried using other parameters such as "walking" but the network did not work and an error occurred.</li>
+                    <li>Due to the limited data on the road dataset attributes that I have, as a disaster response plan analysis, it would be better if vehicle speed, elevation, and time estimates were included in the analysis.</li>
+                    <li>Road type classification is ignored. The fastest route is measured without considering whether the road is passable by vehicles.</li>
+                    <li>There is an evacuation point that is at a steep height, if elevation is included in the "cost" it will probably give different results.</li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

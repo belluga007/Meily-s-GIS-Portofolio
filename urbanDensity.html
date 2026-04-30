@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Density</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Urban Density Analysis
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTj9pOjvqlYTbugyvZdpYPXAZ8mGOeRw-p_ZCeFLriq2rI?width=1024" alt="Fastest Route Map">
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Tools : Google Earth Engine</a><br>
+                <a>From Landsat 9 surface reflectance to generate NDBI (Normalized Difference Built-up Index) and NDBR2 (Normalized Burn Ratio 2) to mask the built-up area.
+                    The built-up area is generated using a relational operation threshold from NBDI and NBR2. Finally, to generate urban density by using the focal or convolution operation for 3 neighborhood pixels to calculate the mean value. The result is the urban density index. <br></a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <a>Tools : Google Earth Engine, ArcMap, Excel</a>
+                <a>Method : NDBI and NDBR2</a>
+                <ol>
+                    <li>This is script is the adaptation from https://github.com/ramiqcom/ebook-urban-gee.git By Ramadhan, Cited on August, 2024</li>
+                    <li>Primary data extracted from Landsat 9 Imagery, USGS, processed using Google Earth Engine</li>
+                </ol>
+            </div>
+        </section>
+</body>
+</html>

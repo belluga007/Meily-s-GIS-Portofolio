@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Area Analysis</title>
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            Service Area Analysis
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQR90SlZAkd-SrmyKOc8t5v3AaWcxKRf31QtHShC8msVIkw?width=1024" alt="service area Map">
+        </main>
+        <!-- Map link -->
+        <main class="outline-box map-container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1lW3nvqmZEFx5a6Pl5aYd9LSN4sYaOs8&ehbc=2E312F" width="640" height="480"></iframe>
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Indetifies the reachable, catchment area around facilities (ex : hospitals, stores) based on street network travel time or distance. 
+                    The differentiate from simple raduis buffers in their method that calculates accessibility along actual, traversable roads, producing polygons or lines that illustrate service coverage.<br>
+                    In this map, the service area are categorized into six class coverage 300, 600, 900, 1200, 2400, 8000 in meters. Service area coverage in percent shows the fifth class is the highest percentage with almost 40%.
+                    the lowest percentage wit 2,63% showed with the fist coverage category (0-300m). Overall, hospital service area has covered with average 20%. 
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Data</div>
+            <div class="data-box">
+                <a>Method : Network Analysis</a><br>
+                <a>Tools : ArcMap</a><br>
+                <ol>
+                    <li>Road Shapefile</li>
+                    <li>Impedance data like travel time (minutes) or distance</li>
+                    <li>Stop point or visited place (in this map is hospitals)</li>
+                    <li>Barrier (optional) represent as a roadblock to find an alternate route</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Deficiencies and possible improvements</div>
+            <div class="desc-box">
+                <ol>
+                    <li>One drawback of this map is that it ignores the road types. The analysis is based solely on the shortest road length, but in reality, some types of roads may be impassable by vehicles.</li>
+                    <li>road inspections and restrictions will be required if they are to be used as detailed information or as a reference for decision-making.</li>
+                    <li>Restrictions on attributes such as specific road types can be included in the "Restrictions" section.</li>
+                    <li>While creating this map, I encountered several issues with the road data. The road data I had was incomplete in several areas, so I had to remove two hospital points to avoid this error. Therefore, this analysis relies heavily on the level of detail and accuracy of the road data used.</li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

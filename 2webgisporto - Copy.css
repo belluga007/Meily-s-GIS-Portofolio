@@ -1,0 +1,423 @@
+
+ /* Dark Mode Theme Colors */
+        :root {
+            --bg-color: #0f0f12;
+            --container-bg: rgba(25, 25, 25, 0.75); /* Lapisan tipis semi-transparan */
+            --text-main: #f0f0f0;
+            --accent-color: #4dabf7;
+            --border-color: rgba(255, 255, 255, 0.1); /* Border halus agar efek lapisan terasa */
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px;
+            color: var(--text-main); 
+            /* Pengaturan Background */
+            background-color: var(--bg-color); 
+             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('GALLERIES/webBACKGROUND.jpg'); /* Pastikan nama file sesuai */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text-main);
+        }
+
+        /* Modifikasi agar kartu proyek lebih menonjol */
+        .project-card, .sidebar { 
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            
+            /* Memberikan efek kaca agar background peta tetap terasa di belakang */
+            -webkit-backdrop-filter: blur(12px); /* Support untuk Safari */
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Menyesuaikan Header agar lebih terbaca */
+        header h1 {
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h1 { 
+            margin: 0;
+            font-size: 2.2em; 
+            letter-spacing: 1px; 
+        }
+
+        .container { 
+            display: flex; 
+            gap: 50px;
+            align-items: flex-start; 
+             /* EFEK UTAMA: Blur pada latar belakang di bawah kotak ini */
+            -webkit-backdrop-filter: blur(12px); /* Support untuk Safari */
+            backdrop-filter: blur(12px); 
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); /* Shadow agar kotak terlihat 'mengambang' */
+        }
+        
+        /* Left Side: Projects */
+        .projects { flex: 2; }
+        .project-item { display: flex; gap: 25px; margin-bottom: 50px; }
+        
+        .map-box { 
+            width: 250px; height: 160px; 
+            background: #2a2a2a; 
+            border: 1px solid var(--border-color); 
+            display: flex; align-items: center; justify-content: center; 
+            color: #888;
+        }
+        /*.map-box { 
+            width: 250px; 
+            height: 160px; 
+            object-fit: cover; /* This crops the image to fit the box perfectly */
+            /*border: 1px solid var(--border-color);
+            background: #2a2a2a; 
+        }*/
+
+        .map-box { 
+            width: 250px; 
+            height: 160px; 
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            background: #2a2a2a; 
+    
+            /* 1. Add transition for a smooth "pop" effect */
+            transition: transform 0.3s ease-in-out; 
+            cursor: pointer;
+    
+            /* 2. Ensure the zoomed image stays on top of other elements */
+            position: relative; 
+            z-index: 1;
+        }
+
+        .map-box:hover {
+            /* 3. Scale up the image (1.2 = 120% size, 1.5 = 150%) */
+            transform: scale(1.5); 
+    
+            /* 4. Bring the hovered image to the very front */
+            z-index: 10; 
+    
+            /* Optional: Add a glow/shadow to make it "pop" more */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
+        }
+        /* Menyesuaikan gambar saat dalam mode Fullscreen */
+        .map-box:fullscreen {
+            object-fit: contain; /* Gambar akan muat di layar tanpa terpotong */
+            background-color: black; /* Latar belakang hitam saat full screen */
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .project-info { flex: 1; }
+        
+        /* Hyperlinked Project Titles */
+        .project-info h2 { margin: 0 0 12px 0; font-size: 1.3em; }
+        .project-info h2 a { 
+            text-decoration: none; 
+            color: var(--accent-color); 
+            transition: color 0.3s;
+        }
+        .project-info h2 a:hover { color: #fff; border-bottom: 1px solid #fff; }
+
+        /* Transparent Description Box */
+        .desc-box { 
+            border: 1px solid var(--border-color); 
+            padding: 15px; 
+            min-height: 80px; 
+            background: transparent; 
+            color: #bbb;
+            line-height: 1.5;
+        }
+
+
+        /* Right Side: Profile Sidebar */
+        .sidebar { 
+            flex: 1; 
+            border: 1px solid var(--border-color); 
+            padding: 25px; 
+            background: var(--container-bg); 
+            height: fit-content; 
+            border-radius: 4px;
+        }
+        
+        .profile-header { display: flex; gap: 20px; align-items: center; margin-bottom: 30px; }
+        .profile-pic { 
+            width: 70px; height: 70px; 
+            background: #333; 
+            border: 1px solid var(--border-color); 
+            border-radius: 50%; /* Circle profile pic */
+            display: flex; align-items: center; justify-content: center; font-size: 0.7em; 
+        }
+
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 20px; font-size: 0.95em; color: #aaa; }
+        .sidebar li a { text-decoration: none; color: var(--accent-color); }
+        .sidebar li a:hover { text-decoration: underline; }
+
+        .sidebar h3 { 
+            margin-bottom: 15px; 
+            color: var(--accent-color); /* Opsional: agar warna judul lebih menonjol */
+        }
+
+        .sidebar-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .sidebar-list li {
+            display: flex;
+            align-items: flex-start; /* Ikon tetap di atas jika teks baris baru (seperti pada Education) */
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+        .sidebar-list i {
+            color: var(--accent-color); /* Menggunakan warna biru soft Anda */
+            width: 25px;               /* Memberikan lebar tetap agar teks setelah ikon sejajar lurus */
+            margin-top: 3px;           /* Penyesuaian vertikal kecil */
+            font-size: 1.1em;
+        }
+        .sidebar-list a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+        .sidebar-list a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Container settings */
+        .profile-pic {
+            width: 60px;          /* Or your desired size */
+            height: 60px;
+            border-radius: 50%;   /* Makes the container a circle */
+            overflow: hidden;     /* Hides the parts of the image that stick out */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Image settings */
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;    /* Crops the image to fill the circle without stretching */
+            object-position: center; /* Centers the face/subject */
+        }
+        
+        /* Mobile View */
+        @media (max-width: 850px) {
+            .container {flex-direction: column-reverse;}
+            .project-item { flex-direction: column; }
+            .map-box { width: 100%; }
+            body { padding: 20px; }
+        }
+
+        /*galleries*/
+        .header-container {
+            text-align: center;
+        }
+
+        .footer-container {
+            margin-top: 50px;
+            padding: 30px;
+            /* Efek lapisan tipis & blur agar peta tetap terasa tapi teks jelas */
+            background-color: rgba(25, 25, 25, 0.7);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background: transparent;
+            border-top: 1px solid var(--border-color);
+            border-radius: 15px 15px 0 0; /* Melengkung di bagian atas saja */
+            text-align: left;
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto; /* Menjaga teks tetap di tengah secara horizontal */
+        }
+
+        .recruiter-note {
+            font-size: 1.1em;
+            color: var(--accent-color); /* Menggunakan warna biru soft */
+            margin-bottom: 10px;
+        }
+
+        .main-text {
+            line-height: 1.6;
+            font-style: italic;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            font-size: 0.9em;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 10px;
+        }
+
+        /* Gaya untuk modal latar belakang */
+/*.modal {
+    display: none; /* Tersembunyi secara default */
+    /*position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9); /* Hitam transparan */
+    /*justify-content: center;
+    align-items: center;
+}
+
+/* Gambar di dalam modal */
+/*.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+/* Tombol Close */
+/*.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Efek kursor pada gambar asli */
+/*.map-box {
+    cursor: zoom-in;
+}
+
+/* ============================================================
+   IMAGE SLIDER - GALLERY (Body)
+   PENTING: Gunakan class .galslide (bukan .slide) di HTML
+   agar tidak bentrok dengan header slider
+   ============================================================ */
+ 
+    .section-slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+ 
+    .galimage-slider {
+        position: relative;
+        width: 640px;
+        height: 426px;
+    }
+ 
+/* Default: semua galslide tersembunyi */
+    .galslide {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        clip-path: circle(0% at 0 50%);
+        transition: opacity 0.5s ease-in-out, clip-path 0.6s ease-in-out;
+        pointer-events: none;
+    }
+ 
+/* Hanya galslide.active yang tampil */
+    .galslide.active {
+        opacity: 1;
+        clip-path: circle(150% at 0 50%);
+        pointer-events: auto;
+    }
+ 
+    .galslide img {
+        width: 100%;
+        border-radius: 15px;
+    }
+ 
+    .slide-text {
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        background-color: rgba(220, 220, 220, 0.609);
+        padding: 15px;
+        border-radius: 10px;
+        max-width: 80%;
+    }
+ 
+    .slide-text h2 {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    .slide-text p {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    .navigation {
+        position: absolute;
+        display: flex;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+}
+ 
+    .slider-btn {
+        background-color: rgb(151, 151, 151);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px;
+        border: none;
+        padding: 0;
+    }
+ 
+    .slider-btn.active {
+        background-color: rgb(38, 70, 83);
+    }
+ 
+    .prev-next-btn {
+        position: absolute;
+        background-color: white;
+        border: none;
+        border-radius: 100%;
+        opacity: 0.5;
+        font-size: medium;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .prev-next-btn:hover {
+        opacity: 1;
+    }
+ 
+    #btn-prev {
+        top: 50%;
+        left: 25px;
+        transform: translateY(-50%);
+    }
+ 
+    #btn-next {
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+    }
+ 
