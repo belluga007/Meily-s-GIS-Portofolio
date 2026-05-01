@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHI</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            URBAN HEAT ISLAND (UHI)
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTT8iq40qhYSpWMEUJft4DQAVLmZBMJrfzUKHQubc7yHoI?width=1024" alt="Fastest Route Map">
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>An Urban Heat Island (UHI) is a phenomenon where urban areas experience higher temperatures than surrounding rural areas due to human activities and the concentration of heat-absorbing materials like concrete and asphalt. 
+                    UHI can be analyzed using remote sensing techniques, particularly by examining Land Surface Temperature (LST) data from satellites (like Landsat 8 or 9) using thermal infrared bands. This provides a "heat map" of the ground surface..
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <ul>
+                    <li>Tools : Google Earth Engine, ArcGIS PRO</li>
+                    <li>Method : LST Analysis, LST used to identify UHI = LST urban - LST rural</li>
+                    <li>Data Source : Landsat 9, Primary data extracted from Landsat 9 Imagery, USGS, processed using Google Earth Engine</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Functions</div>
+            <div class="desc-box">
+                <ol>
+                    <li>Overlapping heat maps with socioeconomic data to see if low-income neighborhoods suffer more from heat.</li>
+                    <li>Simulating where planting 1,000 new trees would reduce the temperature the most.</li>
+                    <li>Identifying the most vulnerable areas within the city for targeted heat mitigation strategies.</li>
+                </ol>
+            </div>
+        </section>
+</body>
+</html>

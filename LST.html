@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LST</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="fastestroute.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <header class="outline-box header">
+            LAND SURFACE TEMPERATURE (LST)
+        </header>
+
+        <!-- Map -->
+        <main class="outline-box map-container">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTNjs78tl5bQYCT1ZInmTrDAelnWgDcMh-jXsba9C11rp8?width=1024" alt="LST Map">
+        </main>
+
+        <!-- Description Section -->
+        <section>
+            <div class="label">Short Description</div>
+            <div class="desc-box">
+                <a>Land Surface Temperature (LST) is a critical parameter in understanding the thermal properties of the Earth's surface. 
+                    It is used in various applications such as urban heat island studies, agricultural monitoring, and climate research. 
+                    LST can be derived from satellite imagery using thermal infrared sensors.
+                    LST is primarily controlled by surface albedo (reflectance), vegetation cover, and soil moisture.  It is crucial for studying urban heat islands, assessing crop health/water stress, predicting fire risks, and modeling climate change.
+                </a>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section>
+            <div class="label">Tools and Data</div>
+            <div class="data-box">
+                <ul>
+                    <li>Tools : Google Earth Engine</li>
+                    <li>Method : LST = (TIR - T_min)/(T_max - T_min)</li>
+                    <li>Data Source : Landsat 9, Primary data extracted from Landsat 9 Imagery, USGS, processed using Google Earth Engine</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Description Problem -->
+        <section>
+            <div class="label">Functions</div>
+            <div class="desc-box">
+                <ol>
+                    <li>Land Surface Temperature Estimation: LST provides information about the temperature of the Earth's surface, which is crucial for understanding thermal dynamics in various environments.</li>
+                    <li>Urbanization Effects: Research often shows higher LST in built-up areas (e.g., maximum in Land Cover Zone 2) compared to vegetated areas.</li>
+                </ol>
+            </div>
+        </section>
+</body>
+</html>

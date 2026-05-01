@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAVI</title>
+    <title>UTFVI</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="fastestroute.css">
 </head>
@@ -11,24 +11,23 @@
     <div class="container">
         <!-- Title -->
         <header class="outline-box header">
-            SOIL ADJUSTED VEGETATION INDEX (SAVI)
+            URBAN THERMAL FIELD VARIANCE INDEX (UTFVI)
         </header>
 
         <!-- Map -->
         <main class="outline-box map-container">
-            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQTNfuxedxmhRrcnyNyQ8nkbAb9KdSxGa5KhaxTMOWM597E?width=1024" alt="SAVI Map">
+            <img src="https://1drv.ms/i/c/ac53d8ec6e57d956/IQRkJgZX7EjiSK3RZth1dvN3AYoYQ74kGTR28jqUkptVhFs?width=1024" alt="UTFVI Map">
         </main>
 
         <!-- Description Section -->
         <section>
             <div class="label">Short Description</div>
             <div class="desc-box">
-                <a>The Soil-Adjusted Vegetation Index (SAVI) is a remote sensing tool used to estimate vegetation "greenness" while minimizing the misleading effects of soil brightness. 
-                    It is an enchancement of the widely used NDVI and is particularly valuavle in <b>arid or semi-arid regions</b> where sparse plant cover leaves much of the soil exposed<br>
-                    Why SAVI instead of NDVI?<br>
-                    SAVI (Soil Adjusted Vegetation Index) is used instead of NDVI primarily to minimize background soil brightness in areas with sparse vegetation (LESS than-40% cover), 
-                    providing more accurate results in arid or semi-arid regions. While NDVI saturates in high-density vegetation, SAVI offers better sensitivity, making it superior for distinguishing vegetation health.<br>
-                    This map shows a local mining area in Sambas Regency, West Kalimantan. Areas marked in red indicate sparse vegetation or low-value bare land, while green indicates vegetated areas.
+                <a>The Urban Thermal Field Variance Index (UTFVI) is a remote sensing tool used to evaluate the ecological health and thermal comfort of a city by measuring the intensity of the Urban Heat Island (UHI) effect. 
+                    It is particularly valuable in <b>urban environments</b> where heat concentration can significantly impact human health and energy consumption<br>
+                    Why UTFVI instead of other indices?<br>
+                    UTFVI (Urban Thermal Field Variance Index) is used instead of other indices primarily to capture the spatial variability of thermal conditions in urban areas.
+                    Lower values indicate better thermal comfort, often found in areas with higher vegetation and lower building density.
                 </a>
             </div>
         </section>
@@ -39,7 +38,7 @@
             <div class="data-box">
                 <ul>
                     <li>Tools : Google Earth Engine, ArcGIS PRO</li>
-                    <li>Method : SAVI = (NIR-red)/(NIR+red+L)x(1+L)</li>
+                    <li>Method : UHI and UTFVI analysis</li>
                     <li>Data Source : Landsat 9, Primary data extracted from Landsat 9 Imagery, USGS, processed using Google Earth Engine</li>
                 </ul>
             </div>

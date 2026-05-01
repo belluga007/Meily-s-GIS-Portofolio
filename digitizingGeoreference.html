@@ -29,9 +29,9 @@
             <div class="label">Short Description</div>
             <div class="desc-box">
                 <a>Tools : Digitation, ArcMap</a><br>
-                <a>A map depicting the fastest evacuation routes from tsunami hazard zones to temporary and permanent evacuation points. 
-                    The fastest route is calculated based on road length in meters. Several impediments, such as elevation, road type, and travel time, are ignored due to attribute limitations in the road dataset used.<br>
-                    Some data obtained by digitizing the Tsunami Evacuation Plan Map For Bantul Regency, Yogyakarta, 2010 consists of: estimated tsunami zones, fishing settlements, temporary and permanent evacuation points.
+                <a>Georeferencing and digitization are two key processes for converting paper maps or static images into digital data usable in geographic information systems (GIS). 
+                    I came up with the idea of ​using an old map from 1945, dating back to the colonial era, to compare it to the current situation. 
+                    I discovered many interesting things about the many changes that have occurred over the past eight decades. The most significant change is land use, indicating that Jakarta has experienced massive growth.
                 </a>
             </div>
         </section>
@@ -53,11 +53,9 @@
             <div class="label">Deficiencies and possible improvements</div>
             <div class="desc-box">
                 <ol>
-                    <li>I tried to assign elevation attributes to the road dataset but it failed and I haven't found the reason yet.</li>
-                    <li>Determining the fastest route based on the length of the road in meters. I tried using other parameters such as "walking" but the network did not work and an error occurred.</li>
-                    <li>Due to the limited data on the road dataset attributes that I have, as a disaster response plan analysis, it would be better if vehicle speed, elevation, and time estimates were included in the analysis.</li>
-                    <li>Road type classification is ignored. The fastest route is measured without considering whether the road is passable by vehicles.</li>
-                    <li>There is an evacuation point that is at a steep height, if elevation is included in the "cost" it will probably give different results.</li>
+                    <li> Unkown or old projection system becomes a very critical issue in georeferencing and digitizing old maps </li>
+                    <li> Lack of understanding about how to use old projection or different projection or transformation systems that is not familiar</li>
+                    <li> This process is a basic process in GIS capabilities but requires high patience and precision.</li>
                 </ol>
             </div>
         </section>
