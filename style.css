@@ -196,9 +196,20 @@
         }
 
         /* Container settings */
+        .profile-title {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: var(--text-main); /* ensures consistent theme color */
+        }
+
+        .profile-header {
+            gap: 10px; /* smaller spacing */
+        }
+
+
         .profile-pic {
-            width: 60px;          /* Or your desired size */
-            height: 60px;
+            width: 100px;          /* Or your desired size */
+            height: 100px;
             border-radius: 50%;   /* Makes the container a circle */
             overflow: hidden;     /* Hides the parts of the image that stick out */
             display: flex;
